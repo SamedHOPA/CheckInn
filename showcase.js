@@ -1,14 +1,14 @@
-(function () {
+﻿(function () {
     "use strict";
 
-    const carousels = document.querySelectorAll("[data-banner-carousel]");
+    const carousels = document.querySelectorAll("[data-showcase-carousel]");
     if (!carousels.length) {
         return;
     }
 
     carousels.forEach((carousel) => {
-        const slides = Array.from(carousel.querySelectorAll(".banner-slide"));
-        const dots = Array.from(carousel.querySelectorAll(".banner-dot"));
+        const slides = Array.from(carousel.querySelectorAll(".showcase-slide"));
+        const dots = Array.from(carousel.querySelectorAll(".showcase-dot"));
 
         if (!slides.length) {
             return;
@@ -62,3 +62,4 @@
         start();
     });
 })();
+
