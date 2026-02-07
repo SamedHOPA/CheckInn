@@ -9,9 +9,6 @@
     --container-width: 1000px;
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --showcase-caption-lines: 4;
-    --showcase-caption-line-height: 1.35;
-    --showcase-caption-padding-y: 1.4rem;
 }
 
 * {
@@ -210,12 +207,11 @@ nav {
     align-items: flex-start;
     padding: 0.65rem 0.85rem 0.75rem;
     font-size: 0.86rem;
-    line-height: var(--showcase-caption-line-height);
+    line-height: 1.35;
     color: #cbd5e1;
     background: rgba(2, 6, 23, 0.82);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     letter-spacing: 0.01em;
-    min-height: calc((var(--showcase-caption-line-height) * 1em * var(--showcase-caption-lines)) + var(--showcase-caption-padding-y));
 }
 
 .showcase-arrow {
@@ -511,10 +507,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    :root {
-        --showcase-caption-lines: 5;
-    }
-
     .top-showcase {
         padding-top: 1.2rem;
     }
